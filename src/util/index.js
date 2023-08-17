@@ -1,6 +1,7 @@
+import {useState} from 'react';
 export const generateRandomNumber = () => Math.floor(Math.random() * 100) + 1;
 
-export const getInitialState = () => ({
+export const [InitialState, setInitialState] = useState({
   actual: generateRandomNumber(),
   guess: undefined,
   allGuesses: [],

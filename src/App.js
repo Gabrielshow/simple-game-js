@@ -8,6 +8,9 @@ import './App.css';
 
 const App = () => {
   const [state, setState] = useState(getInitialState());
+  const {show} = state;
+  const handleClose = () => {}
+  // close logic 
 
   const resetGame = () => {
     setState(getInitialState());
